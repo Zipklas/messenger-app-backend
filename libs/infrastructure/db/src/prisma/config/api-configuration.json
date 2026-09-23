@@ -1,0 +1,18 @@
+{
+  "app": {
+    "port": "${APP_PORT}",
+    "nodeEnv": "${NODE_ENV}"
+  },
+  "database": {
+    "url": "${DATABASE_URL}"
+  },
+  "jwt": {
+    "accessSecret": "${JWT_ACCESS_SECRET}",
+    "refreshSecret": "${JWT_REFRESH_SECRET}",
+    "accessExpiresIn": "${JWT_ACCESS_EXPIRATION}",
+    "refreshExpiresIn": "${JWT_REFRESH_EXPIRATION}"
+  },
+  "cors": {
+    "origin": "${CORS_ORIGIN}"
+  }
+}

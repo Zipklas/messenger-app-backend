@@ -1,0 +1,9 @@
+enum ChatType {
+  DIRECT
+  GROUP
+}
+
+enum MemberRole {
+  ADMIN
+  MEMBER
+}
