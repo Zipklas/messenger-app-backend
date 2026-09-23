@@ -20,6 +20,22 @@
     "forceConsistentCasingInFileNames": true,
     "noImplicitAny": false,
     "strictBindCallApply": false,
-    "noFallthroughCasesInSwitch": false
-  }
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "@apps/api/*": ["apps/api/src/*"],
+      "@libs/infrastructure/db": ["libs/infrastructure/db/src/index"],
+      "@libs/infrastructure/db/*": ["libs/infrastructure/db/src/*"],
+      "@libs/integrations/mailer": ["libs/integrations/mailer/src/index"],
+      "@libs/integrations/mailer/*": ["libs/integrations/mailer/src/*"],
+      "@libs/integrations/kafka": ["libs/integrations/kafka/src/index"],
+      "@libs/integrations/kafka/*": ["libs/integrations/kafka/src/*"],
+      "@libs/services/auth": ["libs/services/auth/src/index"],
+      "@libs/services/auth/*": ["libs/services/auth/src/*"]
+    }
+  },
+  "include": [
+    "apps/**/*",
+    "libs/**/*",
+    ".config/**/*"
+  ]
 }
