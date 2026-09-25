@@ -1,4 +1,3 @@
-// src/common/config/config.schema.ts
 import { IsString, IsNumber, IsOptional } from 'class-validator';
 
 export class ConfigSchema {

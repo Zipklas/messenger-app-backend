@@ -1,0 +1,21 @@
+model User {
+  id       String  @id @default(uuid())
+  email    String  @unique
+  username String  @unique
+  password String?
+
+  provider                  String?   @default("local")
+  isEmailVerified           Boolean   @default(false)
+  verificationCode          String?
+  verificationCodeExpiresAt DateTime?
+
+  avatar    String?
+  createdAt DateTime  @default(now()) @map("created_at")
+  updatedAt DateTime  @updatedAt @map("updated_at")
+  deletedAt DateTime? @map("deleted_at")
+
+  chatMembers  ChatMember[]
+  sentMessages Message[]
+
+  @@map("users")
+}
